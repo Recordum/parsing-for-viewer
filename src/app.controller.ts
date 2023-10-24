@@ -10,4 +10,9 @@ export class AppController {
   async getHello(): Promise<void> {
     this.appService.parse();
   }
+
+  @Get('translate')
+  async translate(): Promise<void> {
+    this.appService.translate();
+  }
 }
